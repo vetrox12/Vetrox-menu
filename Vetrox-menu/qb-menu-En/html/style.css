@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-color: #8946e8; /*   حط لون سيرفرك     */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  transition: all 0.5s;
+  cursor: default;
+}
+
+*:focus {
+  outline: none;
+}
+
+::selection {
+  background-color: transparent;
+}
+
+@media (width: 3840px) and (height: 2160px) {
+  #container {
+    position: absolute;
+    font-size: 25px !important;
+    height: auto;
+    top: 20%;
+    right: 20%;
+    border-radius: 5px;
+    background: transparent !important;
+  }
+
+  #buttons {
+    font-size: 25px !important;
+    max-height: 75vh;
+    width: 300px;
+    overflow-x: none;
+    overflow-y: auto;
+    padding: 10px;
+  }
+
+  div > .text {
+    flex-direction: column;
+    font-size: 23px !important;
+    overflow: hidden;
+  }
+
+  div > .header {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: left;
+    overflow: wrap;
+    color: white;
+    font-size: 25px !important;
+    font-weight: 400;
+    overflow: hidden;
+  }
+}
+
+.exit {
+  display: flex;
+  position: absolute;
+  border-left: 1px solid rgb(255, 254, 254,0.1);
+  border-top: 1px solid rgb(255, 254, 254,0.1);
+  border-bottom: 1px solid rgb(255, 254, 254,0.1);
+  font-size: 0.8rem;
+  color: rgb(255, 254, 254,0.4);
+  margin-top: 42rem;
+  margin-left: 12rem;
+}
+.exit1 {
+  display: flex;
+  position: absolute;
+  margin-top: 42rem;
+  margin-left: 12rem;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2c2f31;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #64676b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #818489;
+}
+
+#container {
+  position: absolute;
+  height: auto;
+  top: 20%;
+  right: 7%;
+  border-radius: 5px;
+  background: transparent !important;
+}
+.button {
+  display: flex;
+  flex-direction: row !important;
+  gap: 10px;
+  transition-duration: 0.2s;
+  animation-duration: 0.2s;
+} 
+.title {
+  gap: 10px;
+  display: flex;
+  flex-direction: row !important;
+}
+
+#buttons {
+  position: relative;
+  max-height: 49.5vh;
+  width: 340px;
+  overflow-x: none;
+  overflow-y: auto;
+  padding: 15px;
+  left: 110px;
+  top: 170px;
+  transition-duration: 0.2s;
+  animation-duration: 0.2s;
+}
+
+.VetroxInformations {
+  display: none;
+  position: absolute;
+  left: 1480px;
+  top: 60px;
+  height: 28.5vh;
+  width: 39.5vh;
+  transition-duration: 0.2s;
+  animation-duration: 0.2s;
+}
+
+.Title {
+  position: absolute;
+  height: auto;
+  width: 292px;
+  left: 71px;
+  top: 190px;
+  font-size: 1.3rem;
+  color: rgb(231, 231, 231);
+  font-weight: bold; 
+  padding: 10px;
+  text-align: left; 
+  direction: ltr;
+  white-space: pre-wrap; 
+  word-wrap: break-word;
+}
+
+.TextTitle {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  max-height: 49.5vh;
+  width: 340px;
+}
+
+.background {
+  display: none;
+  background: #1b1f20e0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 42vh;
+  padding-bottom: 40px;
+  min-height: 96.3vh;
+}
+
+.button {
+  width: auto;
+  height: 65px;
+  color: white;
+  margin: auto;
+  position: relative;
+  top: 15%;
+  margin-top: 0.5rem;
+  overflow: hidden;
+  padding: 0.45rem;
+  background-color: #3f464632;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.4s;
+  animation-duration: 0.4s;
+  border-radius: 6px;
+}
+
+.icon {
+  display: block;
+  position: relative;
+}
+
+.icon i {
+  display: block;
+  position: relative;
+  left: -130px;
+  scale: 1.3;
+}
+
+.disabled > .icon {
+  color: rgb(186, 81, 84);
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: left;
+}
+
+.disabled > .icon i{
+  color: rgb(186, 81, 84);
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: left;
+}
+
+.button:hover {
+  background: var(--main-color);
+}
+
+.menu-header {
+  margin-bottom: 1vh;
+  text-align: center;
+  position: sticky;
+
+}
+
+.disabled > .button:hover {
+  box-shadow: 0 0 111px var(--main-color);
+}
+
+ .title .icon > i{
+  transition: all 0.5s;
+  color: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.322) 0%, rgba(79, 49, 31, 0.256) 100%);
+  -webkit-box-shadow: 13px 13px 44px -7px rgb(255, 255, 255);
+  -moz-box-shadow: 13px 13px 44px -7px rgb(255, 255, 255);
+  box-shadow: 13px 13px 44px -7px rgb(255, 255, 255);
+} 
+
+.disabled {
+  background: radial-gradient(circle, rgba(133, 58, 59, 0.089) 0%, rgba(105,46,47, 0.177) 100%) !important;
+}
+
+div > .text {
+  position: absolute;
+  flex-direction: column;
+  width: 16rem;
+  height: 2.5rem;
+  font-size: 0.75rem;
+  overflow: hidden;
+  color: rgb(176, 176, 176);
+  left: 63px;
+  top: 35px;
+}
+
+.header {
+  width: fit-content;
+  max-width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(235, 235, 235);
+  font-size: 0.9rem;
+  overflow: hidden;
+  position: absolute;
+  left: 62px;
+  top: 14px;
+  white-space: nowrap;
+}
+
+.Logo {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  left: 52%;
+  top: 60%; 
+  transform: translate(-50%, -50%);
+}
+
+.Exit {
+  display: none;
+  position: absolute;
+  height: 28px;
+  width: 110px;
+  left: 94rem;
+  scale: 0.9;
+  top: 2rem;
+  color: rgb(163, 163, 163);
+  border-radius: 5px;
+  background-color: rgba(255, 254, 254, 0.093);
+  font-size: 0.4;
+}
+
+.ESC {
+  position: absolute;
+  left: 12px;
+  top: 3px;
+  scale: 0.8;
+}
+
+.close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  text-align: center;
+  left: 52px;
+  top: 3PX;
+  height: 22px;
+  font-size: 12px;
+  width: 55PX;
+  border-radius: 3px;
+  background-color: rgba(24, 24, 24, 0.496);
+}
